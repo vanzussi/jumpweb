@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Car Jump Challenge | azimuth games</title>
+        <!-- Favicon-->
+        <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico" /> -->
+        <link rel="icon" type="image/png" href="assets/img/favico.png">
+        <link rel="icon" type="image/svg+xml" href="assets/img/favico.svg">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto:wght@400&display=swap" rel="stylesheet">
+        <!--
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        -->
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <script async src="https://cdn.jsdelivr.net/npm/es-module-shims@1.6.3/dist/es-module-shims.min.js"></script> 
+        <script type="importmap"> 
+            { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.151.3/build/three.module.js",
+             "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.151.3/examples/jsm/" } } 
+        </script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container">
+                <h6><a class="navbar-brand" href="#page-top">Car Jump Challenge</a></h6>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#mojo">Mojo</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#jim">Jim</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#app">App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/car-icon.svg" alt="car jump challenge" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading mb-0">Car Jump Challenge</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Drive - Jump - Explore</p>
+                <a href="https://testflight.apple.com/join/eWTh4E6g"><img class="testflight mt-4" src="assets/img/test-flight.png" alt="Download via TestFlight" /></a>
+                
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="mojo">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-secondary mb-0">Find your Mojo</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto p-5" style="background-color: var(--bg-cjc1)" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="img-fluid circle-image rounded-circle ratio ratio-1x1" style="background-image: url('assets/img/big-jumps.jpg')"></div>
+
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Big Jumps<i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto p-5" style="background-color: var(--bg-cjc2)" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+
+                            <div class="img-fluid circle-image rounded-circle ratio ratio-1x1" style="background-image: url('assets/img/mojo.png');background-position-x: 50%;"></div>
+
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Mojo<i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto p-5" style="background-color: var(--bg-cjc3)" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+
+                            <div class="img-fluid circle-image rounded-circle ratio ratio-1x1" style="background-image: url('assets/img/peyote.jpg');background-position-x: 40%;"></div>
+
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Peyote Cactus<i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto p-5" style="background-color: var(--bg-cjc4)" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+
+                            <div class="img-fluid circle-image rounded-circle ratio ratio-1x1" style="background-image: url('assets/img/beetle.jpg');background-position-x: 50%;"></div>
+
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Indestructible Buug<i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto p-5" style="background-color: var(--bg-cjc5)" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+
+                            <div class="img-fluid circle-image rounded-circle ratio ratio-1x1" style="background-image: url('assets/img/mr-mojo.jpg');background-position-x: 40%;"></div>
+
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Mr Mojo Rising<i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto p-5" style="background-color: var(--bg-cjc6)" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+
+                            <div class="img-fluid circle-image rounded-circle ratio ratio-1x1" style="background-image: url('assets/img/garage.jpg');background-position-x: 30%;"></div>
+
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Garages<i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">Drive, skid and jump around an open world in search of huge jumps in this sixties car adventure. 
+                        
+                        <p>Help Jim Morresong find his mojo in the desert.</p> 
+
+                        <p>It's the n'64, Jim is a promising front man yet to meet Ray and start their band.
+                        He's riding the crest of a wave but his inspiration has run dry, so he gets in his car and drives out to the desert to find his Mojo. </p>
+                        
+                        Can you find Mojo Risin' hidden in the desert? Can you find some peyote cactus?</p>
+                    </div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Help guide and drive him on his journey to stardom in Car Jump Adventure</p> 
+                        <p>Impossible jumps in impossible locations in an impossible car with impossible ramps.</p>
+
+                        <p>Can you find the peyote cactus' that will help Jim get his mojo? and then compete in the grand finale "change your perception" challenge.</p>
+                        
+                        <p>Compete against your friends on the Car Jump leaderboards. Who can get to the top of the Car Jump rankings? and who can find how to open the doors of perception, finding Jim's mojo and transcending above the highest jumps?</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://testflight.apple.com/join/eWTh4E6g">
+                        <i class="fas fa-download me-2"></i>
+                        Free Download!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3D Model-->
+        <section class="pt-4 pb-5 bg-dark text-white mb-0" id="jim">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h4 class="text-center text-uppercase text-white">Meet Jim</h4>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+            </div>
+                <!-- About Section Content-->
+            
+            <div class="w-100 ms-auto bg-light mb-5" id="3d-model" style="min-height:400px; "></div>
+
+
+
+        </section>
+
+
+
+
+
+
+        <!-- Contact Section-->
+        <section class="page-section" id="app">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">App Policies</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <h4 class="page-section-heading text-center p-2 mb-5 text-secondary">Car Jump Challenge</h4>
+
+                    <div class="d-flex">
+
+                        <a class="btn btn-xl btn-primary mx-auto" href="privacy.html">
+                            <i class="fas fa-link me-2"></i>
+                            Privacy Policy 
+                        </a>
+                        
+                        <a class="btn btn-xl btn-primary mx-auto" href="terms.html">
+                            <i class="fas fa-link  me-2"></i>
+                            Terms &amp; Conditions
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Light up the fire</h4>
+                        <p class="lead mb-0">
+                            Burn it through the night
+                            <br />
+                            Baby, we can get higher
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Higher than the stars</h4>
+                        <p class="lead mb-0">
+                            Higher than the moon<br />
+                            Higher than the sun
+                        </p>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Don't need no wings to fly</h4>
+                        <p class="lead mb-0">
+                            Just touch the sky <br />
+                            Just say goodbye
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; Electric Azimuth 2023</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Big Jumps</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/big-jumps.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">You are searching for something, but don't yet know what it is. <br />You must complete a challenge, Jim. 
+                                        <br /><br />It will be hard but the rewards will be great. <br /><br />
+                                        You must get higher and higher both physically, mentally and spiritually by completing huge jumps to enter a new reality where all the secrets and mysteries of life will be revealed to you.</p>
+                                        <h2 class="m-4">Are you ready?</h2>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mojo</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/mojo.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Mojo will <b>not</b> get rid of the nubs<br />
+                                        Mojo will not make you look five pounds thinner, because<br />
+                                        Mojo will not be televised, brother. <br /><br />
+                                        
+                                        Mojo will help you fly better<br />
+                                        Mojo will increase your boost and <br />
+                                        Mojo will make your boost last longer</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Peyote Cactus</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/peyote.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Find these smelly sticky cactuses, its said if you run into them they can stick to your bonnet, 
+                                        they are mysterios and precious, who knows what they can be used for.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Da Boog</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/beetle.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">On Jim's travels he ran into an Elder that granted him knowledge of the indestructible boog,
+                                        then one quiet night while meditating in the desert, as the sun set over the blueing sand dunes he was visited by Ferdinand the urban fox, in a dream the car materialised. A miracle.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Mr Mojo Rising</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/mr-mojo.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Somewhere in the desert, out of sight, lives the ancient spirit of Mr Mojo Rising.<br />Some say he takes the form of the wind, 
+                                        some say he's all around us and some say he embodies a giant toad, 
+                                        if you visit him many times with the right headspace you may be able to change your perception, transcend and increase your mojo</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Garages</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/garage.jpg" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">During your journey, you may encounter challenges and opportunities that require you to replenish your boost energy, renew your painted appearance, 
+                                        and transform your reality. <br />
+                                        By doing so, you are not only enhancing your own well-being, but also opening yourself to new possibilities and experiences that may enrich your soul. 
+                                        Remember that you are a spiritual being  and trust that the universe will bring you new opportunities in due time..
+                                        </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script type="module">
+
+			import * as THREE from 'three';
+
+			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+			//import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+
+			let camera, scene, renderer, mesh, hlight, directionalLight, controls; 
+
+			init();
+			animate();
+
+			function init() {
+
+				//const container = document.createElement( 'div' );
+				//document.body.appendChild( container );
+                const container = document.getElementById("3d-model");
+                const height = container.offsetHeight;
+                const width = container.offsetWidth;
+
+				camera = new THREE.PerspectiveCamera( 45, width / height, 0.1, 20 );
+				camera.position.set( 0, 1, 4 );
+
+				scene = new THREE.Scene();
+
+
+                hlight = new THREE.AmbientLight (0x404040, 1.3);
+                scene.add(hlight);
+
+                //Adding directional lights
+                directionalLight = new THREE.DirectionalLight(0xffffff, 0.4);
+                directionalLight.position.set(0,1,0);
+                directionalLight.castShadow = true;
+                scene.add(directionalLight);
+
+				// model
+
+				new GLTFLoader()
+					.setPath( '' )
+					.load( 'assets/beetle.web.out.gltf', function ( gltf ) {
+
+						scene.add( gltf.scene );
+
+						const object = gltf.scene.getObjectByName( 'car' );
+
+					} );
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+
+				renderer.setSize( width, height );
+
+				renderer.toneMapping = THREE.ACESFilmicToneMapping;
+				renderer.toneMappingExposure = 1;
+				renderer.outputEncoding = THREE.sRGBEncoding;
+				container.appendChild( renderer.domElement );
+
+				//const environment = new RoomEnvironment();
+// envmap
+                const genCubeUrls = function ( prefix, postfix ) {
+
+                return [
+                    prefix + 'right' + postfix, prefix + 'left' + postfix,
+                    prefix + 'top' + postfix, prefix + 'bottom' + postfix,
+                    prefix + 'front' + postfix, prefix + 'back' + postfix
+                ];
+
+                };
+
+                const urls = genCubeUrls( 'assets/cube/', '.jpg' );
+
+                new THREE.CubeTextureLoader().load( urls, function ( cubeTexture ) {
+
+                cubeTexture.encoding = THREE.sRGBEncoding;
+
+                scene.background = cubeTexture;
+
+                //lightProbe.copy( LightProbeGenerator.fromCubeTexture( cubeTexture ) );
+
+                const geometry = new THREE.SphereGeometry( 25, 64, 32 );
+                //const geometry = new THREE.TorusKnotGeometry( 4, 1.5, 256, 32, 2, 3 );
+
+                const material = new THREE.MeshStandardMaterial( {
+                    color: 0xffffff,
+                    metalness: 0,
+                    roughness: 0,
+                    envMap: cubeTexture,
+                    envMapIntensity: 1,
+                } );
+
+                // mesh
+                mesh = new THREE.Mesh( geometry, material );
+                scene.add( mesh );
+
+                render();
+
+} );
+
+
+/*
+				const pmremGenerator = new THREE.PMREMGenerator( renderer );
+
+				scene.background = new THREE.Color( 0xbbbbbb );
+				scene.environment = pmremGenerator.fromScene( environment ).texture;
+*/
+				controls = new OrbitControls( camera, renderer.domElement );
+				controls.enableDamping = true;
+				controls.minDistance = 1;
+				controls.maxDistance = 10;
+				controls.target.set( 0, 0.35, 0 );
+				controls.update();
+
+				//window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			//
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+				controls.update(); // required if damping enabled
+				render();
+
+			}
+
+			function render() {
+                //animate();
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+
+    </body>
+</html>
